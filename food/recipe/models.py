@@ -14,7 +14,7 @@ class Recipe(models.Model):
     products = models.ManyToManyField(
         Product,
         through='RecipeIngredient',
-        related_name='ingredients'
+        related_name='recipe'
     )
 
     def __str__(self):
